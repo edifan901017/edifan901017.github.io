@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url('./img/fondo2.jpg');
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: rgba(51, 51, 51, 0.8); /* Fondo semi-transparente para el encabezado */
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+section {
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para las secciones */
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.responsive-image {
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 3%;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.about-text {
+    width: 70%;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.responsive-video {
+    width: 24%; /* Ajusta el ancho según sea necesario */
+    height: auto;
+    margin-bottom: 20px; /* Espacio entre los videos */
+    border-radius: 18px;
+    border: 0px solid #000000;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1, h2 {
+    animation: slideIn 1s ease-in-out;
+}
+
+p {
+    border: 2px solid #77aaff; /* Color del borde */
+    padding: 10px; /* Espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente */
+    margin-bottom: 20px; /* Espacio entre párrafos */
+}
+.custom-title {
+    font-family: 'Roboto', sans-serif; /* Cambia la fuente a Roboto */
+    font-size: 2em; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-align: center; /* Alineación centrada */
+    margin-bottom: 20px; /* Margen inferior */
+    animation: slideIn 1s ease-in-out; /* Animación */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
